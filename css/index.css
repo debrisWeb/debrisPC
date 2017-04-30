@@ -25,170 +25,41 @@ h6
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-.container{
-    position: relative;
-    width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
+.sp-nav-logo{
+    width: 12%;
+    float: left;
+    margin-left: 15%;
 }
-.header-bg{
-    width: 100%;
-    padding-top: 40%;
+.sp-nav-logo>.enterprise-name{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #fff;
+}
+.sp-logo-white{
+    display: block;
     background-size: cover;
-    background-image: url("../img/header-bg.png");
+    background-image: url("../img/logo-white.png");
 }
-.header-content{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+.sp-logo-blue{
+    display: block;
+    background-size: cover;
+    background-image: url("../img/logo-blue.png");
 }
-.nav-width{
-    width: 100%;
-    margin-top: 4rem;
-    cursor:default
+.nav-fixed>.sp-nav-logo>.sp-logo-white{
+      background-image: url("../img/logo-blue.png");
 }
-.header-bg .sp-logo{
-    padding-left: 15%;
+.nav-fixed>.sp-nav-logo>.enterprise-name{color:#4A4A4A;}
+.nav-logo-white{
+    width: 30px;
+    padding-top: 30px;
+    margin-right: 5px;
     float: left;
 }
-.header-bg .sp-nav{
-    padding-right: 15%;
-    float: right;
+.footer-logo-white{
+    width: 60px;
+    height: 60px;
 }
 
-.nav-button {
-    float: left;
-    margin-left: 1rem;
-    border: 0;
-    padding: 0.2rem 1.5rem;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-    position: relative;
-    vertical-align: middle;
-    border-radius: 100px;
-}
-.nav-button::before, button::after {
-    box-sizing: border-box;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 100px;
-}
-
-.center:hover {
-    color: #6477b9;
-}
-.center::before, .center::after {
-    top: 0;
-    left: 0;
-    -webkit-transform-origin: center;
-    -ms-transform-origin: center;
-    transform-origin: center;
-}
-.center::before {
-    border-top: 1px solid #6477b9;
-    border-bottom: 1px solid #6477b9;
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
-}
-.nav-fixed .center::before {
-    border-top: 1px solid #FCB814;
-    border-bottom: 1px solid #FCB814;
-    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
-    -webkit-transform: scale3d(0, 1, 1);
-    transform: scale3d(0, 1, 1);
-}
-.nav-width .center:hover::before {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    -webkit-transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-}
-.nav-fixed .center:hover::before {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    -webkit-transition: -webkit-transform 0.8s;
-    transition: transform 0.8s;
-}
-.nav-fixed{
-    position: fixed;
-    top:0;
-    left: 0;
-    right:0;
-    z-index: 999;
-    padding: 1rem 0;
-    margin: 0;
-    background: #FFFFFF;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.20);
-}
-.active{
-    padding: 0.2rem 1.5rem;
-    font-size: 1.4rem;
-    color: #206CFF;
-    background: #fff;
-    border-radius: 10rem;
-}
-.nav-fixed .nav-button{
-    color: #4A4A4A;
-    font-size: 1.4rem;
-}
-.nav-fixed .active{
-    padding: 0.2rem 1.5rem;
-    color: #fff;
-    background: #FCB814;
-    border-radius: 10rem;
-}
-
-
-/*max767-nav*/
-.sp-header{
-    position: fixed;
-    z-index: 9999;
-    display: none;
-    width: 100%;
-    height: 5rem;
-    line-height: 5rem;
-    background: #FFFFFF;
-    box-shadow: 0 2px 4px 0 rgba(52,44,113,0.10);
-    padding: 0 1.5rem;
-}
-.sp-header>.sp-logo{
-    float: left;
-}
-.sp-header>.sp-icon{
-    float: right;
-}
-
-.sp-header-fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100% !important;
-    z-index: 99;
-    display: none;
-    background-color: #fff;
-}
-.sp-header-nav{margin-top: 5rem}
-.sp-header-nav>li{
-    width: 100%;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 1.8rem;
-    color: #342C71;
-    border-bottom: 1px solid #CBCBD3;
-}
-
-.directory-column-section-list .sp-icon{
-    display: none;
-}
-/*导航部分 end*/
 .intro-data{
     padding:10% 0;
 }
@@ -347,7 +218,7 @@ h6
     margin: 5% 0 15% 0;
 }
 .results-list>li{
-        position: relative;
+    position: relative;
     float: left;
     width: 19.5%;
     margin: 2% auto;
@@ -357,6 +228,15 @@ h6
 }
 .results-list>li .text{
     font-size: 3.6rem;
+}
+.results-list>li .wavy-lines{
+    display: block;
+    width: 60%;
+    padding-top: 6%;
+    margin: 10px auto 0 auto;
+    background-size: cover;
+    background-image: url("../img/wavy-lines1.png");
+    background-repeat: no-repeat;
 }
 .text-unit{
     font-size: 1.8rem;
@@ -368,12 +248,100 @@ h6
     box-shadow: 0 4px 20px 0 rgba(0,0,0,0.50);
     border-radius: 10px;
 }
-.results-list>li:hover >.mouse{
+.results-list>li:hover .mouse{
     display: block !important;
     right: -1rem;
     bottom: -1.1rem;
     width: 12%;
-    padding-top: 12%;
+    padding-top: 12%;background-color: #2B2E33;
+}
+.results-list>li:hover>.wavy-lines{
+    background-image: url("../img/wavy-lines2.png") !important;
+    background-repeat: no-repeat;
+}
+/*team*/
+.team{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.team .team-l{
+    float: left;
+    padding: 5% 5% 0 18%;
+    width: 49.9%;
+    background: #EEEFEE;
+}
+.team .team-r{
+    float: right;
+    padding: 5% 18% 0 5%;
+    width: 49.9%;
+    height: 100%;
+    background: #FFFFFF;
+}
+.team .team-l h2, .team .team-r h2{
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+    color: #4A4A4A;
+    text-align: center;
+}
+.team .jobs-tab{
+    width: 300px;
+    margin: auto;
+}
+.team .jobs-tab>li{
+    width: 135px;
+    line-height: 2rem;
+    float: left;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #9b9b9b;
+    background: #F0F4F8;
+    border-radius: 100px;
+}
+.team .jobs-tab>.active{
+    color: #fff;
+    background-image: linear-gradient(90deg, #2577FF 33%, #00BEFF 100%);
+}
+jobs-block-tab> .active{
+    display: block;
+}
+.jobs-block{
+    min-height: 460px;
+    margin-top: 22px;
+    padding: 26px 5% 15% 5%;
+}
+.jobs-block .jobs-content{padding-bottom: 20px}
+.jobs-block .jobs-content h3 {
+    margin-bottom: 9px;
+    font-size: 1.4rem;
+    color: #878787;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.jobs-block .jobs-content ol>li {
+    font-family: 'PingFangSC-Light';
+    list-style:none;
+    color: #999;
+    line-height: 1.4;
+}
+
+.team .team-bottom-bg{
+    width: 100%;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0px;*/
+    /*right:0;*/
+    padding-top: 33%;
+    background-size: cover;
+}
+.team .team-l .designer{
+    background-image: url("../img/team-designer.png");
+}
+.team .team-r .programmer{
+    width:70%;
+    margin: auto;
+    background-image: url("../img/team-programmer.png");
 }
 
 .office-bg{
@@ -402,67 +370,6 @@ h6
     color: #FFFFFF;
 }
 
-/*footer*/
-.footer{
-    padding: 10% 0 2% 0;
-    background-image: linear-gradient(1deg, #2B2E33 0%, #283140 100%);
-}
-.footer .footer-l{
-    float: left;
-}
-.email-hover{
-    display: none;
-    position: absolute;
-    top: -2.2rem;
-    padding:0.1rem 0.5rem;
-    font-size: 1.2rem;
-    background: rgba(0, 0, 0, 0.51);
-    border-radius: 5px;
-}
-.footer .footer-l .contact{
-    padding-top: 2.2rem;
-     cursor:default
-}
-.footer .footer-l .contact .faq{
-    width: 49.9%;
-    float: right;
-}
-.footer .footer-l .contact .email{
-    float: left;
-}
-.footer .footer-l .contact .email:hover .email-hover{
-    display: block!important;
-    color: #fff;
-}
-.footer .footer-r{
-    width: 49.9%;
-    float: right;
-}
-.footer .footer-r .directory-column-section-list{
-    width: 30%;
-    float: left;
-}
-.footer .footer-r .directory-column-section-list:nth-child(2){
-    float: left;
-    margin: 0 5%;
-}
-.footer .footer-r .directory-column-section-list>ul>li{
-    padding: 1rem 0;
-    cursor:default;
-}
-.footer .footer-r .directory-column-section-list>ul>li:hover{
-    color: #fff;
-    text-decoration:underline
-}
-.footer-l.sp-adderss{padding: 2.5rem 0}
-.for-the-record{
-    margin-top: 40px;
-    padding: 1rem 0;
-    border-top: 1px solid #9B9B9B;;
-}
-.for-the-record .for-the-record-l{float: left}
-.for-the-record .for-the-record-r{float: right}
-
 /*响应*/
 @media screen and (max-width: 1400px) {
      .intro-text .web-font{
@@ -476,7 +383,6 @@ h6
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
     }
-
     .results-list>li .sp-f60{
         font-size: 5.4rem !important;
     }
@@ -488,25 +394,24 @@ h6
     }
 }
 @media screen and  (max-width: 1220px) {
-    .container{
-        width: 100%;
-        padding: 5% 15%;
-    }
     .intro-data{
         padding:10% 15%;
     }
     .are-doing .web-font{
         padding: 0;
     }
-    .footer{
-        padding: 0;
+     .service{
+        padding:10%;
+    }
+    /*招聘*/
+    .team .team-l {
+        padding: 5% 5% 0 10%;
+    }
+     .team .team-r {
+        padding: 5% 10% 0 5%;
     }
 }
 @media screen and  (max-width: 999px) {
-    .container{
-        width: 100%;
-        padding: 5% 15%;
-    }
     .intro-text .web-font{
         display: block;
         font-size: 1.8rem;
@@ -516,6 +421,9 @@ h6
     }
     .are-doing .web-font{
         padding: 0;
+    }
+     .service{
+        padding:10%;
     }
     /*我们的成绩*/
     .results-list{
@@ -530,37 +438,11 @@ h6
     .results-list>li .sp-f18{
         font-size: 1.4rem !important;
     }
-    /*office*/
-    .office-bg .office-container p{
-        padding: 2rem;
-        font-size: 1.4rem;
-    }
-     .footer{
-        padding: 0;
-    }
 }
 @media screen and (max-width: 767px) {
-    html{font-size: 8.5px}
-    /*导航部分*/
-    .container{
-        width: 100%;
-        padding: 5% 10%;
-    }
-    .nav-width{
-        display: none;
-    }
-    .nav-width .sp-nav{
-        display: none;
-    }
     .are-doing .web-font,
     .service-text .web-font,
     .results-container .web-font{font-size: 4.2rem!important; padding: 1rem 0}
-    .nav-iPad{height: 5rem}
-    .content-iPad{
-        /*overflow-y: auto;height:calc(100vh - 60px )*/
-    }
-    .header-bg{padding-top: 60%}
-    .sp-header-fixed, .sp-header{display: block !important}
 
     .intro-data .intro-text{width: 100%;float: none}
     .intro-data .header-data-bg{display: none}
@@ -581,6 +463,9 @@ h6
         width: 100%;
         margin: 5% auto !important;
     }
+     .service{
+        padding:10%;
+    }
     .service .service-text, .service .service-bg{
         width: 100%;
         float: none;
@@ -598,7 +483,7 @@ h6
      }
     /*我们的成绩*/
     .results-list>li{
-        width: 95%;
+        width: 40%;
         float: none;
         padding:10% 0;
     }
@@ -612,6 +497,17 @@ h6
         font-size: 1.8rem !important;
     }
 
+    /*招聘*/
+     .team .team-l, .team .team-r{
+         width: 100%;
+         float: none;
+         padding: 5% 15% 0%;
+    }
+     .jobs-block{
+         min-height: 200px;
+         padding: 26px 5% 10% 5%;
+     }
+
     .office-bg{height: 300px;}
     .intro-text p{
         overflow: auto;
@@ -622,48 +518,6 @@ h6
         width: 80%;
         top:10%;
     }
-
-    /*底部*/
-    .footer .footer-l,.footer .footer-r{
-        width: 100%;
-        float: none;
-    }
-    .footer .footer-r .directory-column-section-list{
-        width: 100%;
-        margin: auto!important;
-    }
-    .directory-column-section-list h3{
-        padding: 0.5rem 0;
-        border-bottom: 1px solid #9B9B9B;
-    }
-     .directory-column-section-list ul{
-        border-bottom: 1px solid #9B9B9B;
-    }
-    .directory-column-section-list .sp-icon{
-        display: block!important;
-        float: right;
-    }
-    .directory-column-section-list .section{
-        font-size: 1.2rem;
-        display: none;
-    }
-    .footer .footer-l .contact{padding: 2.2rem 0 1rem 0;}
-    .footer-l.sp-adderss{margin: 1rem 0;}
-    .footer .footer-l .contact .faq{text-align: right}
-
-    .for-the-record{
-        margin-top: 10px;
-    }
-    .for-the-record .for-the-record-l,.for-the-record  .for-the-record-r{
-        float: none;
-    }
-
 }
 @media screen and (max-width: 321px) {
-   .header-bg{padding-top: 75%}
-    .intro-text p{
-        overflow: auto;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 100;
-    }
 }
