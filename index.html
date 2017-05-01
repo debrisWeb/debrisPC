@@ -53,34 +53,34 @@
     </div>
     <!--end max-width: 767px-->
     <div class="content-iPad">
-        <header class="header-bg clear sp-relative">
-            <div class="header-content">
-                <div class="nav-width clear">
-                    <div class="sp-nav-logo">
-                        <i class="sp-logo-white nav-logo-white"></i>
-                        <div class="enterprise-name">碎片科技</div>
-                    </div>
-                    <nav class="sp-nav">
-                        <div class="center nav-button active">首页</div>
-                        <div class="center nav-button ">关于我们</div>
-                        <div class="center nav-button ">技术博客</div>
-                        <div class="center nav-button ">API文档</div>
-                        <div class="center nav-button ">购买土货</div>
-                    </nav>
+        <header>
+            <div class="nav-width clear nav-fixed">
+                <div class="sp-nav-logo">
+                    <i class="sp-logo-blue"></i>
+                    <div class="enterprise-name">碎片科技</div>
                 </div>
-                <div class="intro-data container">
-                    <div class="intro-text">
-                        <i class="web-font">农产品上行大数据平台</i>
-                        <div style="width: 15%;height: 4px;background: #fff;"></div>
-                        <p class="margin-tb-15">
-                            清晨乡土田间的一株青菜，鸡窝里温热的鸡蛋，农夫市集上卖的一篮野蘑菇。农产品的背后是自然的节气，是乡土的礼仪，也是饮食的习俗。一方面，城市居民越来越渴望回归山野，重温乡土文化，对纯天然农产品的需求与日俱增。另一方面农产品受到关于意识、监管、利益、信任的挑战，我们关注的是在农产品产业链中自下而上创新的新可能。
-                        </p>
-                        <div class="video-details margin-t-20">视频详情 <i>#</i></div>
-                    </div>
-                    <div class="sp-wow zoomIn header-data-bg" data-wow-duration="2s" data-wow-delay="1s"></div>
-                </div>
+                <nav class="sp-nav">
+                    <div class="center nav-button active">首页</div>
+                    <div class="center nav-button ">关于我们</div>
+                    <div class="center nav-button ">技术博客</div>
+                    <div class="center nav-button ">API文档</div>
+                    <div class="center nav-button ">购买土货</div>
+                </nav>
             </div>
         </header>
+        <div class=" header-bg clear sp-relative">
+            <div class="header-content intro-data container">
+                <div class="intro-text">
+                    <i class="web-font">农产品上行大数据平台</i>
+                    <div style="width: 15%;height: 4px;background: #fff;"></div>
+                    <p class="margin-tb-15">
+                        清晨乡土田间的一株青菜，鸡窝里温热的鸡蛋，农夫市集上卖的一篮野蘑菇。农产品的背后是自然的节气，是乡土的礼仪，也是饮食的习俗。一方面，城市居民越来越渴望回归山野，重温乡土文化，对纯天然农产品的需求与日俱增。另一方面农产品受到关于意识、监管、利益、信任的挑战，我们关注的是在农产品产业链中自下而上创新的新可能。
+                    </p>
+                    <div class="video-details margin-t-20">视频详情 <i>#</i></div>
+                </div>
+                <div class="sp-wow zoomIn header-data-bg" data-wow-duration="2s" data-wow-delay="1s"></div>
+            </div>
+        </div>
         <div class="are-doing clear">
             <div class="container">
                 <i class="web-font sp-f48">我们在做什么</i>
@@ -363,18 +363,18 @@
 </div>
 <script>
 
-    (function (cssrain) {
-        var downLoadBar = cssrain('.nav-width');
-        var downSetTop = downLoadBar.offset().top;
-        cssrain(window).on('scroll', function() {
-            var nowScroll = cssrain(this).scrollTop()
-            if(nowScroll > downSetTop) {
-                downLoadBar.addClass('nav-fixed')
-            } else {
-                downLoadBar.removeClass('nav-fixed')
-            }
-        });
-    })($)
+//    (function (cssrain) {
+//        var downLoadBar = cssrain('.nav-width');
+//        var downSetTop = downLoadBar.offset().top;
+//        cssrain(window).on('scroll', function() {
+//            var nowScroll = cssrain(this).scrollTop()
+//            if(nowScroll > downSetTop) {
+//                downLoadBar.addClass('nav-fixed')
+//            } else {
+//                downLoadBar.removeClass('nav-fixed')
+//            }
+//        });
+//    })($)
 
     $('.are-doing-list >li').hover(function () {
         $(this).addClass("are-doing-list-hover");

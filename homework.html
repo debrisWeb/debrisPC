@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .module{
+        width: 80%;
+        margin: auto;
+        /*一个大容器*/
+    }
+    .module>div{
+        width: 500px;
+        height: 500px;
+        margin: 20px;
+        float: left;
+        background-image: url(./img/brainstorm.png);
+        /*大容器里面的四个模块*/
+    }
+    .bg-repeat{
+        /*第一个模块----图片平铺*/
+        background-repeat: repeat;
+    }
+    .bg-repeat-x{
+        /*第二个模块----图片以X轴平铺*/
+        background-repeat: repeat-x;
+    }
+    .bg-repeat-y{
+        /*第三个模块----图片以Y轴平铺*/
+         background-repeat: repeat-y;
+     }
+    .bg-no-repeat{
+        /*第四个模块----图片不平铺*/
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+<div class="module">
+    <div class="bg-repeat"></div>
+    <div class="bg-repeat-x"></div>
+    <div class="bg-repeat-y"></div>
+    <div class="bg-no-repeat"></div>
+</div>
+</body>
+</html>

@@ -25,43 +25,10 @@ h6
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
 }
-.sp-nav-logo{
-    width: 12%;
-    float: left;
-    margin-left: 15%;
-}
-.sp-nav-logo>.enterprise-name{
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: #fff;
-}
-.sp-logo-white{
-    display: block;
-    background-size: cover;
-    background-image: url("../img/logo-white.png");
-}
-.sp-logo-blue{
-    display: block;
-    background-size: cover;
-    background-image: url("../img/logo-blue.png");
-}
-.nav-fixed>.sp-nav-logo>.sp-logo-white{
-      background-image: url("../img/logo-blue.png");
-}
-.nav-fixed>.sp-nav-logo>.enterprise-name{color:#4A4A4A;}
-.nav-logo-white{
-    width: 30px;
-    padding-top: 30px;
-    margin-right: 5px;
-    float: left;
-}
-.footer-logo-white{
-    width: 60px;
-    height: 60px;
-}
+
 
 .intro-data{
-    padding:10% 0;
+    padding:10%;
 }
 .intro-data .intro-text{
     width: 50%;

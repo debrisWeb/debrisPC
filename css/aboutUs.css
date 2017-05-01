@@ -1,0 +1,45 @@
+.office-bg{
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("./../img/ofice.png");
+}
+.office-bg .office-container{
+    position: absolute;
+    top:35%;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+}
+.office-bg .office-container .office-text-bg{
+    padding-top: 14%;
+    background-size: cover;
+    background-image: url("./../img/office-text.png");
+}
+
+.about-tab{
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.20);
+}
+.about-tab>li{
+    float: left;
+    margin: auto;
+    margin: 0 5%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 14px;
+    color: #4A4A4A;
+}
+.about-tab>.active{
+    color: #218CEA;
+    border-bottom: 1px solid #218CEA;
+}
+.module1{
+    width: 100%;
+}
+.module1 h3{
+
+}
